@@ -1,9 +1,8 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 const eslint = require('eslint');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const isPlainObj = require('is-plain-obj');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const eslintConfig = require('../index.js');
+/* eslint-enable @typescript-eslint/no-var-requires */
 
 describe('eslint config tests', () => {
   describe('eslint object', () => {
