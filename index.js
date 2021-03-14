@@ -20,5 +20,7 @@ module.exports = {
       default: 'array'
     }],
 
+    // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
   },
 };
