@@ -65,11 +65,8 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
     '@typescript-eslint/prefer-enum-initializers': 'error',
 
-
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
     '@typescript-eslint/prefer-optional-chain': 'error',
-
-
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-ts-expect-error.md
     '@typescript-eslint/prefer-ts-expect-error': 'error',
@@ -78,7 +75,6 @@ module.exports = {
     // that work better than ESLint
     // The base rule needs to be disabled to prevent false positives.
     // -----------------------------
-
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
     'lines-between-class-members': 'off',
@@ -107,8 +103,6 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': ['error'],
-
-
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
     'no-unused-expressions': 'off',
