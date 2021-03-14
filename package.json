@@ -54,7 +54,6 @@
   },
   "dependencies": {
     "@typescript-eslint/parser": "^4.17.0",
-    "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.1.0"
   },
   "peerDependencies": {
