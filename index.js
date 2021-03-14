@@ -33,6 +33,9 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
     '@typescript-eslint/no-dynamic-delete': 'error',
 
+    // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
+    '@typescript-eslint/prefer-enum-initializers': 'error',
+
   },
   overrides: [
     {
