@@ -35,7 +35,11 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/method-signature-style.md
     '@typescript-eslint/method-signature-style': 'error',
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
+    // no-dupe-class-members - note you must disable the base rule as it can report incorrect errors
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dupe-class-members.md
+    "no-dupe-class-members": "off",
+    "@typescript-eslint/no-dupe-class-members": ["error"],
+
     '@typescript-eslint/no-dynamic-delete': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
