@@ -27,6 +27,9 @@ module.exports = {
     // disable the rule for all files, see overrides below.
     '@typescript-eslint/explicit-function-return-type': 'off',
 
+    // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/method-signature-style.md
+    '@typescript-eslint/method-signature-style': 'error',
+
   },
   overrides: [
     {
