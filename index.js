@@ -33,29 +33,29 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/naming-convention.md
     camelcase: 'off',
-    "@typescript-eslint/naming-convention": [
-      "error",
+    '@typescript-eslint/naming-convention': [
+      'error',
       {
-        "selector": "default",
-        "format": ["camelCase"]
+        selector: 'default',
+        format: ['camelCase'],
       },
       {
-        "selector": "variable",
-        "format": ["camelCase", "UPPER_CASE"]
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE'],
       },
       {
-        "selector": "parameter",
-        "format": ["camelCase"],
-        "leadingUnderscore": "allow"
+        selector: 'parameter',
+        format: ['camelCase'],
+        leadingUnderscore: 'allow',
       },
       {
         // Matches: class, interface, typeAlias, enum, typeParameter
-        "selector": "typeLike",
-        "format": ["PascalCase"]
+        selector: 'typeLike',
+        format: ['PascalCase'],
       },
       {
-        "selector": "enumMember",
-        "format": ["PascalCase"]
+        selector: 'enumMember',
+        format: ['PascalCase'],
       },
     ],
 
