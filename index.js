@@ -23,7 +23,11 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
+    // dot-notation - note you must disable the base rule as it can report incorrect errors
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": ["error"],
+
     // disable the rule for all files, see overrides below.
     '@typescript-eslint/explicit-function-return-type': 'off',
 
