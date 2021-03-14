@@ -69,7 +69,7 @@ module.exports = {
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
-    "@typescript-eslint/prefer-optional-chain": "error",
+    '@typescript-eslint/prefer-optional-chain': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly.md
     '@typescript-eslint/prefer-readonly': 'error',
