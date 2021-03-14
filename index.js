@@ -30,6 +30,9 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/method-signature-style.md
     '@typescript-eslint/method-signature-style': 'error',
 
+    // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
+    '@typescript-eslint/no-dynamic-delete': 'error',
+
   },
   overrides: [
     {
