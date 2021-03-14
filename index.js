@@ -30,10 +30,30 @@ module.exports = {
     // disable the rule for all files, see overrides below.
     '@typescript-eslint/explicit-function-return-type': 'off',
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/method-signature-style.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/method-signature-style.md
     '@typescript-eslint/method-signature-style': 'error',
 
-    // no-dupe-class-members - note you must disable the base rule as it can report incorrect errors
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dynamic-delete.md
+    '@typescript-eslint/no-dynamic-delete': 'error',
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
+    '@typescript-eslint/prefer-enum-initializers': 'error',
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md
+    '@typescript-eslint/prefer-nullish-coalescing': 'error',
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
+    "@typescript-eslint/prefer-optional-chain": "error",
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly.md
+    '@typescript-eslint/prefer-readonly': 'error',
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md
+    '@typescript-eslint/prefer-readonly-parameter-types': 'error',
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-ts-expect-error.md
+    '@typescript-eslint/prefer-ts-expect-error': 'error',
+
 
     // @typescript-eslint overrides
     // that work better than ESLint
