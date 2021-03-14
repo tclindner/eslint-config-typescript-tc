@@ -80,7 +80,6 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-ts-expect-error.md
     '@typescript-eslint/prefer-ts-expect-error': 'error',
 
-
     // @typescript-eslint overrides
     // that work better than ESLint
     // The base rule needs to be disabled to prevent false positives.
