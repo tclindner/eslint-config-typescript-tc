@@ -65,17 +65,11 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
     '@typescript-eslint/prefer-enum-initializers': 'error',
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md
-    '@typescript-eslint/prefer-nullish-coalescing': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
     '@typescript-eslint/prefer-optional-chain': 'error',
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly.md
-    '@typescript-eslint/prefer-readonly': 'error',
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md
-    '@typescript-eslint/prefer-readonly-parameter-types': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-ts-expect-error.md
     '@typescript-eslint/prefer-ts-expect-error': 'error',
@@ -85,9 +79,6 @@ module.exports = {
     // The base rule needs to be disabled to prevent false positives.
     // -----------------------------
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md
-    "dot-notation": "off",
-    "@typescript-eslint/dot-notation": ["error"],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
     'lines-between-class-members': 'off',
@@ -117,14 +108,7 @@ module.exports = {
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': ['error'],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implied-eval.md
-    'no-implied-eval': 'off',
-    'no-new-func': 'off',
-    '@typescript-eslint/no-implied-eval': 'error',
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-throw-literal.md
-    'no-throw-literal': 'off',
-    '@typescript-eslint/no-throw-literal': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
     'no-unused-expressions': 'off',
