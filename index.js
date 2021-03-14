@@ -15,12 +15,12 @@ module.exports = {
     'import/external-module-folders': ['node_modules', 'node_modules/@types'],
   },
   rules: {
-    // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/array-type.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md
     '@typescript-eslint/array-type': ['error', {
       default: 'array'
     }],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
@@ -35,6 +35,10 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
     '@typescript-eslint/prefer-enum-initializers': 'error',
+
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
+    "prefer-optional-chain": "error",
 
   },
   overrides: [
