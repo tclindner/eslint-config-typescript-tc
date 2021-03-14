@@ -43,6 +43,12 @@ module.exports = {
     '@typescript-eslint/no-dynamic-delete': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
+
+    // no-redeclare - note you must disable the base rule as it can report incorrect errors
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-redeclare.md
+    "no-redeclare": "off",
+    "@typescript-eslint/no-redeclare": ["error"],
+
     '@typescript-eslint/prefer-enum-initializers': 'error',
 
     // no-array-constructor - note you must disable the base rule as it can report incorrect errors
