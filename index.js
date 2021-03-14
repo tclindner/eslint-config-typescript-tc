@@ -19,9 +19,7 @@ module.exports = {
     // -----------------------------
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md
-    '@typescript-eslint/array-type': ['error', {
-      default: 'array'
-    }],
+    '@typescript-eslint/array-type': ['error', {default: 'array'}],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
