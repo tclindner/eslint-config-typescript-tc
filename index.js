@@ -41,6 +41,10 @@ module.exports = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
     '@typescript-eslint/prefer-enum-initializers': 'error',
 
+    // no-array-constructor - note you must disable the base rule as it can report incorrect errors
+    "no-array-constructor": "off",
+    "@typescript-eslint/no-array-constructor": ["error"],
+
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
     "prefer-optional-chain": "error",
