@@ -54,6 +54,11 @@ module.exports = {
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
 
+    // no-unused-expressions
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": ["error"],
+
     '@typescript-eslint/prefer-enum-initializers': 'error',
 
     // no-array-constructor - note you must disable the base rule as it can report incorrect errors
