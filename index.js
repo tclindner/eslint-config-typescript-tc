@@ -142,7 +142,51 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
 
+    // Override Airbnb 'import/extensions' rule. Add 'ts' and 'tsx'.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        mjs: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
 
+    // Override Airbnb 'import/no-extraneous-dependencies' rule. Add 'ts' and 'tsx'.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          'test/**',
+          'tests/**',
+          'spec/**',
+          '**/__tests__/**',
+          '**/__mocks__/**',
+          'test.{js,jsx,ts,tsx}',
+          'test-*.{js,jsx,ts,tsx}',
+          '**/*{.,_}{test,spec}.{js,jsx,ts,tsx}',
+          '**/jest.config.js',
+          '**/jest.setup.js',
+          '**/vue.config.js',
+          '**/webpack.config.js',
+          '**/webpack.config.*.js',
+          '**/rollup.config.js',
+          '**/rollup.config.*.js',
+          '**/gulpfile.js',
+          '**/gulpfile.*.js',
+          '**/Gruntfile{,.js}',
+          '**/protractor.conf.js',
+          '**/protractor.conf.*.js',
+          '**/karma.conf.js',
+        ],
+        optionalDependencies: false,
+      },
+    ],
   },
   overrides: [
     {
