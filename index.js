@@ -90,32 +90,32 @@ module.exports = {
     "@typescript-eslint/dot-notation": ["error"],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
-    "lines-between-class-members": "off",
-    "@typescript-eslint/lines-between-class-members": ["error"],
+    'lines-between-class-members': 'off',
+    '@typescript-eslint/lines-between-class-members': ['error'],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-dupe-class-members.md
-    "no-dupe-class-members": "off",
-    "@typescript-eslint/no-dupe-class-members": ["error"],
+    'no-dupe-class-members': 'off',
+    '@typescript-eslint/no-dupe-class-members': ['error'],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
-    "no-empty-function": "off",
-    "@typescript-eslint/no-empty-function": ["error"],
+    'no-empty-function': 'off',
+    '@typescript-eslint/no-empty-function': ['error'],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-loop-func.md
     'no-loop-func': 'off',
     '@typescript-eslint/no-loop-func': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-redeclare.md
-    "no-redeclare": "off",
-    "@typescript-eslint/no-redeclare": ["error"],
+    'no-redeclare': 'off',
+    '@typescript-eslint/no-redeclare': ['error'],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
-    "no-shadow": "off",
-    "@typescript-eslint/no-shadow": ["error"],
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
-    "no-array-constructor": "off",
-    "@typescript-eslint/no-array-constructor": ["error"],
+    'no-array-constructor': 'off',
+    '@typescript-eslint/no-array-constructor': ['error'],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-implied-eval.md
     'no-implied-eval': 'off',
@@ -127,8 +127,8 @@ module.exports = {
     '@typescript-eslint/no-throw-literal': 'error',
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-expressions.md
-    "no-unused-expressions": "off",
-    "@typescript-eslint/no-unused-expressions": ["error"],
+    'no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-expressions': ['error'],
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-use-before-define.md
     'no-use-before-define': 'off',
