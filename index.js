@@ -49,6 +49,11 @@ module.exports = {
     "no-redeclare": "off",
     "@typescript-eslint/no-redeclare": ["error"],
 
+    // no-shadow - note you must disable the base rule as it can report incorrect errors
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-shadow.md
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+
     '@typescript-eslint/prefer-enum-initializers': 'error',
 
     // no-array-constructor - note you must disable the base rule as it can report incorrect errors
