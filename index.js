@@ -28,6 +28,7 @@ module.exports = {
     "dot-notation": "off",
     "@typescript-eslint/dot-notation": ["error"],
 
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
     // disable the rule for all files, see overrides below.
     '@typescript-eslint/explicit-function-return-type': 'off',
 
