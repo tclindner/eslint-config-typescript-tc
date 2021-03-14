@@ -124,9 +124,27 @@ module.exports = {
       // Enable the rule specifically for TypeScript files
       files: ['*.ts', '*.tsx'],
       rules: {
-        // Required for mixed JS/TS code bases - https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
-        '@typescript-eslint/explicit-function-return-type': ['error']
-      }
+        // Required for mixed JS/TS code bases - https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
+        '@typescript-eslint/explicit-function-return-type': ['error'],
+
+        // Disable the following rules since the TypeScript
+        // compiler does it.
+        'constructor-super': 'off',
+        'getter-return': 'off',
+        'no-const-assign': 'off',
+        'no-dupe-args': 'off',
+        'no-dupe-keys': 'off',
+        'no-func-assign': 'off',
+        'no-new-symbol': 'off',
+        'no-obj-calls': 'off',
+        'no-this-before-super': 'off',
+        'no-undef': 'off',
+        'no-unreachable': 'off',
+        'no-unsafe-negation': 'off',
+        'valid-typeof': 'off',
+        'import/named': 'off',
+        'import/no-unresolved': 'off',
+      },
     },
   ],
 };
