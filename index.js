@@ -22,5 +22,20 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/consistent-type-definitions.md
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
+    // disable the rule for all files, see overrides below.
+    '@typescript-eslint/explicit-function-return-type': 'off',
+
   },
+  overrides: [
+    {
+      // Enable the rule specifically for TypeScript files
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        // Required for mixed JS/TS code bases - https://github.com/typescript-eslint/typescript-eslint/blob/v4.0.1/packages/eslint-plugin/docs/rules/explicit-function-return-type.md
+        '@typescript-eslint/explicit-function-return-type': ['error']
+      }
+    },
+  ],
 };
