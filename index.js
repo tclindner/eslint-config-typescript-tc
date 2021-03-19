@@ -41,11 +41,11 @@ module.exports = {
       },
       {
         selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE'],
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase', 'snake_case'],
       },
       {
         selector: 'parameter',
-        format: ['camelCase'],
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase', 'snake_case'],
         leadingUnderscore: 'allow',
       },
       {
