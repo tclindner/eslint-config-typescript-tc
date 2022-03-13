@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 module.exports = {
   extends: ['plugin:@typescript-eslint/recommended', 'eslint-config-prettier'],
   parser: '@typescript-eslint/parser',
