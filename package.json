@@ -54,7 +54,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.1",
     "eslint-config-prettier": "^8.8.0"
   },
   "peerDependencies": {
