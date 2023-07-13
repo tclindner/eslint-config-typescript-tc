@@ -35,7 +35,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.2",
+    "@types/jest": "^29.5.3",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "enhanced-resolve": "^5.15.0",
     "eslint": "^8.44.0",
