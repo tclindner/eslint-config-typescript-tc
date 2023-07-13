@@ -45,7 +45,7 @@ describe('eslint config tests', () => {
       expect(error.line).toStrictEqual(expectedErrorLineNum);
       expect(error.column).toStrictEqual(expectedErrorColumnNum);
       expect(error.message).toStrictEqual(
-        'Enum name `notificationType` must match one of the following formats: PascalCase'
+        'Enum name `notificationType` must match one of the following formats: PascalCase',
       );
     });
   });
