@@ -5,8 +5,6 @@
 [![license](https://img.shields.io/github/license/tclindner/eslint-config-typescript-tc.svg?maxAge=2592000&style=flat-square)](https://github.com/tclindner/eslint-config-typescript-tc/blob/main/LICENSE)
 [![npm](https://img.shields.io/npm/v/eslint-config-typescript-tc.svg?maxAge=2592000?style=flat-square)](https://www.npmjs.com/package/eslint-config-typescript-tc)
 ![ci](https://github.com/tclindner/eslint-config-typescript-tc/workflows/ci/badge.svg?branch=main)
-[![Dependency Status](https://david-dm.org/tclindner/eslint-config-typescript-tc.svg?style=flat-square)](https://david-dm.org/tclindner/eslint-config-typescript-tc)
-[![devDependency Status](https://david-dm.org/tclindner/eslint-config-typescript-tc/dev-status.svg?style=flat-square)](https://david-dm.org/tclindner/eslint-config-typescript-tc#info=devDependencies)
 
 ## What is eslint-config-typescript-tc?
 
@@ -35,23 +33,31 @@ npx install-peerdeps --dev eslint-config-typescript-tc
 
 ## Usage
 
-Add the following to your `.eslintrc.json` file:
+Add the following to your `.eslintrc.js` file:
 
-```json
-{
-	"extends": "eslint-config-typescript-tc"
-}
+```js
+module.exports = {
+  extends: ['eslint-config-tc', 'eslint-config-typescript-tc'],
+  parserOptions: {
+    project: './tsconfig.json',
+    tsconfigRootDir: __dirname,
+  },
+};
 ```
 
-If you need to override a rule, your `.eslintrc.json` file should look like the example below. All shared rules will be used, but `@typescript-eslint/array-type` will be turned off.
+If you need to override a rule, your `.eslintrc.js` file should look like the example below. All shared rules will be used, but `@typescript-eslint/array-type` will be turned off.
 
-```json
-{
-	"extends": "eslint-config-typescript-tc",
+```js
+module.exports = {
+  	extends: ['eslint-config-tc', 'eslint-config-typescript-tc'],
+  	parserOptions: {
+    	project: './tsconfig.json',
+   	 	tsconfigRootDir: __dirname,
+  	},
 	"rules": {
 		"@typescript-eslint/array-type": "off"
 	}
-}
+};
 ```
 
 ## Related
