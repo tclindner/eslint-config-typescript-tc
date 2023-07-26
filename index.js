@@ -152,5 +152,11 @@ module.exports = {
         'import/no-unresolved': 'off',
       },
     },
+    {
+      files: ['**/*.spec.js', '**/*.test.js', '**/tests-*.js', '**/*.spec.ts', '**/*.test.ts', '**/tests-*.ts'],
+      rules: {
+        '@typescript-eslint/no-non-null-assertion': 'off',
+      },
+    },
   ],
 };
