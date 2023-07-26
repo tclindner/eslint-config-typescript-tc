@@ -121,6 +121,9 @@ module.exports = {
         optionalDependencies: false,
       },
     ],
+
+    // See https://github.com/typescript-eslint/typescript-eslint/issues/7227
+    '@typescript-eslint/no-invalid-void-type': 'off',
   },
   overrides: [
     {
