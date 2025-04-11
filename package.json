@@ -53,7 +53,7 @@
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "eslint-config-prettier": "^10.1.1"
+    "eslint-config-prettier": "^10.1.2"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.29.0",
