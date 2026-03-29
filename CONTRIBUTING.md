@@ -4,7 +4,7 @@
 
 ### Node
 
-* [Node.js](https://nodejs.org/) - v20.0.0+
+* [Node.js](https://nodejs.org/) - v22.0.0+
 * [npm](https://www.npmjs.com/) - v10.0.0+
 
 ## Install project dependencies
