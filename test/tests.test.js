@@ -1,11 +1,14 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const {ESLint} = require('eslint');
-const isPlainObj = require('is-plain-obj');
-const eslintConfig = require('../index');
-/* eslint-enable @typescript-eslint/no-var-requires */
+import {ESLint} from 'eslint';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import eslintConfig from '../index';
+
+const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const lintFile = async (files) => {
-  const linter = new ESLint();
+  const linter = new ESLint({
+    overrideConfigFile: path.resolve(dirname, 'testing.eslint.config.js'),
+  });
   const results = await linter.lintFiles(files);
   const errorMessages = results[0].messages;
   const error = errorMessages[0];
@@ -14,9 +17,17 @@ const lintFile = async (files) => {
 };
 
 describe('eslint config tests', () => {
-  describe('eslint object', () => {
-    test('should be an object', () => {
-      expect(isPlainObj(eslintConfig)).toBe(true);
+  describe('eslint config object', () => {
+    test('should be an array', () => {
+      expect(Array.isArray(eslintConfig)).toBe(true);
+    });
+
+    test('array elements should be objects', () => {
+      const configObjects = eslintConfig.filter((item) => typeof item === 'object' && item !== null);
+
+      expect(configObjects.length).toBeGreaterThan(0);
+
+      expect(configObjects.every((config) => typeof config === 'object')).toBe(true);
     });
   });
 
