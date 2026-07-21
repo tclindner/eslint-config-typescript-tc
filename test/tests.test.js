@@ -33,14 +33,14 @@ describe('eslint config tests', () => {
 
   describe('run eslint and make sure it runs', () => {
     test('eslint should run without failing', async () => {
-      const file = './test/fixtures/invalid-func-style.ts';
-      const expectedErrorLineNum = 1;
-      const expectedErrorColumnNum = 1;
+      const file = './test/fixtures/invalid-function-style.ts';
+      const expectedErrorLineNumber = 1;
+      const expectedErrorColumnNumber = 1;
       const error = await lintFile(file);
 
       expect(error.ruleId).toStrictEqual('func-style');
-      expect(error.line).toStrictEqual(expectedErrorLineNum);
-      expect(error.column).toStrictEqual(expectedErrorColumnNum);
+      expect(error.line).toStrictEqual(expectedErrorLineNumber);
+      expect(error.column).toStrictEqual(expectedErrorColumnNumber);
       expect(error.message).toStrictEqual('Expected a function expression.');
     });
   });
@@ -48,13 +48,13 @@ describe('eslint config tests', () => {
   describe('enum format', () => {
     test('eslint should run without failing', async () => {
       const file = './test/fixtures/invalid-enum.ts';
-      const expectedErrorLineNum = 1;
-      const expectedErrorColumnNum = 6;
+      const expectedErrorLineNumber = 1;
+      const expectedErrorColumnNumber = 6;
       const error = await lintFile(file);
 
       expect(error.ruleId).toStrictEqual('@typescript-eslint/naming-convention');
-      expect(error.line).toStrictEqual(expectedErrorLineNum);
-      expect(error.column).toStrictEqual(expectedErrorColumnNum);
+      expect(error.line).toStrictEqual(expectedErrorLineNumber);
+      expect(error.column).toStrictEqual(expectedErrorColumnNumber);
       expect(error.message).toStrictEqual(
         'Enum name `notificationType` must match one of the following formats: PascalCase',
       );
@@ -64,13 +64,13 @@ describe('eslint config tests', () => {
   describe('enum member format', () => {
     test('eslint should run without failing', async () => {
       const file = './test/fixtures/invalid-enum-member.ts';
-      const expectedErrorLineNum = 2;
-      const expectedErrorColumnNum = 3;
+      const expectedErrorLineNumber = 2;
+      const expectedErrorColumnNumber = 3;
       const error = await lintFile(file);
 
       expect(error.ruleId).toStrictEqual('@typescript-eslint/naming-convention');
-      expect(error.line).toStrictEqual(expectedErrorLineNum);
-      expect(error.column).toStrictEqual(expectedErrorColumnNum);
+      expect(error.line).toStrictEqual(expectedErrorLineNumber);
+      expect(error.column).toStrictEqual(expectedErrorColumnNumber);
       expect(error.message).toStrictEqual('Enum Member name `banner` must match one of the following formats: PascalCase');
     });
   });
